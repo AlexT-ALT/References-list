@@ -7,30 +7,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
             text-align: center;
+            color: rgb(53, 63, 149);
+            font-size: 2em;
+            margin-top: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
         table, th, td {
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
         }
         th, td {
-            padding: 10px;
-            text-align: left;
+            padding: 15px;
+            text-align: center;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: rgb(53, 63, 149);
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f3f4fc;
+        }
+        tr:hover {
+            background-color: #ebedfa;
+            transition: background-color 0.3s;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: rgb(53, 63, 149);
+            color: #fff;
+            text-align: center;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 10px;
+            }
+            footer {
+                font-size: 0.8em;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -39,7 +85,7 @@
     <table>
         <thead>
             <tr>
-                <th>Broker Name</th>
+                <th>Brokerage Company</th>
                 <th>Agent Name</th>
                 <th>Phone Number</th>
                 <th>Email Address</th>
@@ -47,30 +93,24 @@
         </thead>
         <tbody>
             <tr>
-                <td>John Doe</td>
-                <td>Jane Smith</td>
-                <td>(123) 456-7890</td>
-                <td>jane.smith@example.com</td>
+                <td>TenPoint Expediting Services</td>
+                <td>John Dugle</td>
+                <td>(800) 670-0695</td>
+                <td>jdugle@tenpointexpedite.com</td>
             </tr>
             <tr>
-                <td>Michael Johnson</td>
-                <td>Emily Davis</td>
-                <td>(987) 654-3210</td>
-                <td>emily.davis@example.com</td>
-            </tr>
-            <tr>
-                <td>Sarah Brown</td>
-                <td>Chris Wilson</td>
-                <td>(555) 123-4567</td>
-                <td>chris.wilson@example.com</td>
-            </tr>
-            <tr>
-                <td>Robert White</td>
-                <td>Amy Adams</td>
-                <td>(444) 987-6543</td>
-                <td>amy.adams@example.com</td>
+                <td>AMTrans Expedite</td>
+                <td>Pat Buttarazzi</td>
+                <td>(410) 926-8192</td>
+                <td>pbuttarazzi@amtransexpedite.com</td>
             </tr>
         </tbody>
     </table>
+    <footer>
+        ALT SOUTHEASTERN ENTERPRIZES LLC<br>
+        4327 Dugger Dr, Powder Springs GA 30127<br>
+        Main: (678) 904-2327<br>
+        Email: <a href="mailto:dispatch@altsoutheastern.com">dispatch@altsoutheastern.com</a>
+    </footer>
 </body>
 </html>
